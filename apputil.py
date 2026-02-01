@@ -16,10 +16,13 @@ def palindrome(word):
             cleaned += char
     return cleaned == cleaned[::-1]
 
-palindrome("racecar")       
-palindrome("Nurses Run")
-palindrome("Sit on a potato pan, Otis.")
-palindrome("hello")
+
+print("Palindrome tests:")
+print("racecar:", palindrome("racecar"))
+print("Nurses Run:", palindrome("Nurses Run"))
+print("Sit on a potato pan, Otis.:", palindrome("Sit on a potato pan, Otis."))
+print("hello:", palindrome("hello"))
+print()
 
 
     """
@@ -40,8 +43,10 @@ def parentheses(sequence):
             return False
     return count == 0
 
-parentheses("((blah)()()())")
-parentheses("(((())blee))")
-parentheses("(()hello((())()))")
-parentheses("((((((())")
-parentheses("()))")
+print("Parentheses tests:")
+print("((blah)()()()):", parentheses("((blah)()()())"))
+print("(((())blee)):", parentheses("(((())blee))"))
+print("(()hello((())())):", parentheses("(()hello((())()))"))
+print("((((((()):", parentheses("((((((())"))
+print("())):", parentheses("()))"))
+
